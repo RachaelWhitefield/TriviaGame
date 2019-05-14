@@ -22,6 +22,14 @@ var correctAnswers =
         "Plankton",
         "Mrs. Puff",
         "Fred"];
+
+var questionCounter = 0;
+var selectAnswer;
+var clock;
+var correctAnswers = 0;
+var incorrectAnswers = 0;
+var unansweredQuestions = 0;
+
                 
 
 // NEED //
