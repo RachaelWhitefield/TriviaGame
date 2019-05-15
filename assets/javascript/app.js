@@ -1,17 +1,72 @@
 $(document).ready(function() {
-
+    var questionCounter = 0;
+    var time = 15;
+    var correctAnswers = 0;
+    var incorrectAnswers = 0;
+    var unansweredQuestions = 0;
+    
 })
 
-var questionArray = [ "Where does everyone live?", "What does Spongebob live in?", "What is Mr. Krabs' first name?", "Who is Mermaid Man's sidekick?", "Who is always trying to steal the Krabby Patty formula?", "Who is Spongebob's driving instructor?", "Who always yells, 'My leg?'" ];
+var questions = [ 
+    {
+        question: "Where does everyone live?",
+        choices:  ["Shell City", "Bubble City", "Rock Bottom", "Bikini Bottom"],
+        correctAnswer: "Bikini Bottom",
+        image: "<img src='assets/images/bikinibottom.png'>"
+    },
+    {
+        question: "What does Spongebob live in?",
+        choices:  ["Anchor", "Pineapple", "Tree Dome", "Easter Island Head"],
+        correctAnswer: "Pineapple",
+        image: "<img src='assets/images/pineapple.png'>"
+    },
+    {
+        question: "What is Mr. Krabs' first name?",
+        choices: ["Gary", "Eugene", "Patchy", "Larry"],
+        correctAnswer: "Eugene",
+        image: "<img src='assets/images/krabs.jpg'>"
+    },
+    {
+        question:  "Who is Mermaid Man's sidekick?",
+        choices:   ["The Quickster", "Captain Magma", "Barnacle Boy", "The Elastic Waistband"],
+        correctAnswer: "Barnacle Boy",
+        image: "<img src='assets/images/Mermaid_Man_and_Barnacle_Boy.jpg'>" 
+    },
+    {
+        question:   "Who is always trying to steal the Krabby Patty formula?",
+        choices:    ["Plankton", "ManRay", "The Flying Dutchman", "Old Man Jenkins"],
+        correctAnswer: "Plankton",
+        image: "<img src='assets/images/plankton.jpg'>"
+    },
+    {
+        question:   "Who is Spongebob's driving instructor?",
+        choices:    ["Sandy Cheeks", "Perch Perkins", "Karen", "Mrs. Puff"],
+        correctAnswer:  "Mrs. Puff",
+        image:  "<img src='assets/images/mrsPuff.jpg'>"
+    },
+    {
+        question:   "Who always yells, 'My leg?'" ,
+        choices:     ["Patrick Star", "Bubble Bass", "Fred Rechid", "Squilliam Fancyson"],
+        correctAnswer:  "Fred Rechid",
+        image:  "<img src='assets/images/Fred.jpg'>"
+
+
+    }];
+
+
+
+
+
+
+
 
 var answerArray = [ 
-    ["Shell City", "Bubble City", "Rock Bottom", "Bikini Bottom"],
-    ["Anchor", "Pineapple", "Tree Dome", "Easter Island Head"],
-    ["Gary", "Eugene", "Patchy", "Larry"],
-    ["The Quickster", "Captain Magma", "Barnicle Boy", "The Elastic Waistband"],
-    ["Plankton", "ManRay", "The Flying Dutchman", "Old Man Jenkins"],
-    ["Sandy Cheeks", "Perch Perkins", "Karen", "Mrs. Puff"],
-    ["Patrick", "Bubble Bass", "Fred", "Squilliam Fancyson"],
+    
+    
+    
+    
+    
+   
 ]
 
 var correctAnswers =
@@ -23,12 +78,11 @@ var correctAnswers =
         "Mrs. Puff",
         "Fred"];
 
-var questionCounter = 0;
+var correctImage = new Array();
+    correctImage[0] = "<img src='assets/images/bikinibottom.png"
+    correctImage
+
 var selectAnswer;
-var clock;
-var correctAnswers = 0;
-var incorrectAnswers = 0;
-var unansweredQuestions = 0;
 
                 
 
