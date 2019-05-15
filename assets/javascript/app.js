@@ -63,9 +63,43 @@ var questions = [
         image:  "<img src='assets/images/pearl.jpg'>"
     },
     {
-        question:   "What is the most commonly used name for SpongeBob's pet?",
+        question:   "What is the most commonly used name for Spongebob's pet?",
         choices:    ["Gare-Bear", "Garold Wilson Jr.", "Gary", "Miss Tuffsy"],
         correctAnswer:  "Gary",
         image:  "<img src='assets/images/gary.png'>"
     }
-];         
+];   
+
+function questionContent() {
+    $("#gameArea").append("<p><strong>" +
+    questions[questionCounter].question + 
+    "</p><p class='choices'>" +
+    questions[questionCounter].choices[0] +
+    "</p><p> class='choices'>" +
+    questions[questionCounter].choices[1] +
+    "</p><p> class='choices'>" +
+    questions[questionCounter].choices[2] +
+    "</p><p> class='choices'>" + 
+    questions[questionCounter].choices[3] +
+    "</strong></p>");
+}
+
+function userRight() {
+    $("#gameArea").html("<p>Yup!</p>");
+    correctAnswers++;
+    // var correctAnswer = questions[questionCounter].correctAnswer;
+    setTimeout(nextQuestion, 3000);
+    questionCounter++;
+}
+
+function userWrong() {
+    $("#gameArea").html("<p>Nope!</p>");
+    incorrectAnswers++;
+    var correctAnswer = questions [questionCounter].correctAnswer;
+    $("gameArea").append("<p>The answer was <span class='answer'>" +
+    correctAnswer + 
+    "</span></p>" +
+    questions[questionCounter].image);
+    setTimeout(nextQuestion, 3000);
+    questionCounter++;
+}
