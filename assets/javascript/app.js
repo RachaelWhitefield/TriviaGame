@@ -49,66 +49,29 @@ var questions = [
         choices:     ["Patrick Star", "Bubble Bass", "Fred Rechid", "Squilliam Fancyson"],
         correctAnswer:  "Fred Rechid",
         image:  "<img src='assets/images/Fred.jpg'>"
-
-
-    }];
-
-
-
-
-
-
-
-
-var answerArray = [ 
-    
-    
-    
-    
-    
-   
-]
-
-var correctAnswers =
-    [   "Bikini Bottom",
-        "Pineapple",
-        "Eugene",
-        "Barnicle Boy",
-        "Plankton",
-        "Mrs. Puff",
-        "Fred"];
-
-var correctImage = new Array();
-    correctImage[0] = "<img src='assets/images/bikinibottom.png"
-    correctImage
-
-var selectAnswer;
-
-                
-
-// NEED //
-    // 1 MINUTE COUNTDOWN TIMER
-    // CORRECT/INCORRECT LAST PAGE
-    // OPTIONS BUTTONS
-
-
-// Where does everyone live?
-    // Bikini Bottom - Shell City - Rock Bottom - Bubble City
-
-// What is Spongebob's house?
-    // Pineapple - Anchor - Easter Island Head - Tree Dome
-
-// What is Mr. Krabs' first name?
-    // Gary - Eugene - Patchy - Larry
-
-// Who is Mermaid Man's sidekick?
-    // The Quickster - Barnicle Boy - Captain Magma - The Elastic Waistband
-
-// Who is always trying to steal the Krabby Patty formula?
-    // ManRay - Plankon - The Flying Dutchman - Old Man Jenkins
-
-// Who is Spongebob's Driving Teacher?
-    // Sandy Cheeks - Mrs. Puff - Perch Perkins - Karen
-
-// Who always yells, "My leg!"?
-    // Fred - Patrick - Bubble Bass - Squilliam Fancyson
+    },
+    {
+        question:   "Squidward is a ...?",
+        choices:     ["Cuttlefish", "Squid", "Octopus", "Snail"],
+        correctAnswer:  "Octopus",
+        image:  "<img scr='assets/images/squidward.jpg'>"
+    },
+    {
+        question:   "Who is Pearl's favorite band?",
+        choices:    ["The Sonars", "The Bird Brains", "Ned and the Needlefish", "Boys Who Cry"],
+        correctAnswer:  "Boys Who Cry",
+        image:  "<img src='assets/images/pearl.jpg'>"
+    },
+    {
+        question:   "Where is Sandy from?",
+        choices:    ["Texas", "California", "Bikini Bottom", "The Woods"],
+        correctAnswer:  "Texas",
+        image:  "<img src='assets/images/sandy.jpg'>"
+    },
+    {
+        question:   "What is the most commonly used name for SpongeBob's pet?",
+        choices:    ["Gare-Bear", "Garold Wilson Jr.", "Gary", "Gazza"],
+        correctAnswer:  "Gary",
+        image:  "<img src='assets/images/gary.png'>"
+    }
+];         
