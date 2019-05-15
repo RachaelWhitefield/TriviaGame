@@ -63,14 +63,8 @@ var questions = [
         image:  "<img src='assets/images/pearl.jpg'>"
     },
     {
-        question:   "Where is Sandy from?",
-        choices:    ["Texas", "California", "Bikini Bottom", "The Woods"],
-        correctAnswer:  "Texas",
-        image:  "<img src='assets/images/sandy.jpg'>"
-    },
-    {
         question:   "What is the most commonly used name for SpongeBob's pet?",
-        choices:    ["Gare-Bear", "Garold Wilson Jr.", "Gary", "Gazza"],
+        choices:    ["Gare-Bear", "Garold Wilson Jr.", "Gary", "Miss Tuffsy"],
         correctAnswer:  "Gary",
         image:  "<img src='assets/images/gary.png'>"
     }
