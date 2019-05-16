@@ -5,14 +5,16 @@ $(document).ready(function() {
     var incorrectAnswers = 0;
     var unansweredQuestions = 0;
     
-})
+
 
 var questions = [ 
     {
         question: "Where does everyone live?",
         choices:  ["Shell City", "Bubble City", "Rock Bottom", "Bikini Bottom"],
         correctAnswer: "Bikini Bottom",
-        image: "<img src='assets/images/bikinibottom.png'>"
+        image: "<img src='assets/images/bikinibottom.png'>", 
+        wrongImage: "<img src='assets/images/nopeRainbow.jpg'>"
+
     },
     {
         question: "What does Spongebob live in?",
@@ -71,23 +73,24 @@ var questions = [
 ];   
 
 function questionContent() {
-    $("#gameArea").append("<p><strong>" +
+    var questionText = "<p>" +
     questions[questionCounter].question + 
     "</p><p class='choices'>" +
     questions[questionCounter].choices[0] +
-    "</p><p> class='choices'>" +
+    "</p><p class='choices'>" +
     questions[questionCounter].choices[1] +
-    "</p><p> class='choices'>" +
+    "</p><p class='choices'>" +
     questions[questionCounter].choices[2] +
-    "</p><p> class='choices'>" + 
+    "</p><p class='choices'>" + 
     questions[questionCounter].choices[3] +
-    "</strong></p>");
+    "</p>";
+    $("#gameArea").html(questionText);
 }
 
 function userRight() {
     $("#gameArea").html("<p>Yup!</p>");
     correctAnswers++;
-    // var correctAnswer = questions[questionCounter].correctAnswer;
+    var correctAnswer = questions[questionCounter].correctAnswer;
     setTimeout(nextQuestion, 3000);
     questionCounter++;
 }
@@ -103,3 +106,29 @@ function userWrong() {
     setTimeout(nextQuestion, 3000);
     questionCounter++;
 }
+
+function nextQuestion() {
+    questionContent();
+}
+questionContent()
+$(document).on("click", ".choices", function(){
+    var userChoice = $(this).text();
+    console.log($(this).text());
+
+    if (userChoice === questions[questionCounter].correctAnswer) {
+        console.log("Answer is right");
+        userRight();
+    } else {
+        console.log("The answer is wrong");
+        userWrong();
+    }
+
+})
+
+
+
+
+
+
+
+})
