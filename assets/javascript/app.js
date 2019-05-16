@@ -12,7 +12,7 @@ var questions = [
         question: "Where does everyone live?",
         choices:  ["Shell City", "Bubble City", "Rock Bottom", "Bikini Bottom"],
         correctAnswer: "Bikini Bottom",
-        image: "<img src='assets/images/bikinibottom.png'>", 
+        rightImage: "<img src='assets/images/bikinibottom.png'>", 
         wrongImage: "<img src='assets/images/nopeRainbow.jpg'>"
 
     },
@@ -20,63 +20,63 @@ var questions = [
         question: "What does Spongebob live in?",
         choices:  ["Anchor", "Pineapple", "Tree Dome", "Easter Island Head"],
         correctAnswer: "Pineapple",
-        image: "<img src='assets/images/pineapple.png'>",
+        rightImage: "<img src='assets/images/pineapple.png'>",
         wrongImage: "<img src='assets/images/nopeActually.jpg'>"
     },
     {
         question: "What is Mr. Krabs' first name?",
         choices: ["Gary", "Eugene", "Patchy", "Larry"],
         correctAnswer: "Eugene",
-        image: "<img src='assets/images/krabs.jpg'>",
+        rightImage: "<img src='assets/images/krabs.jpg'>",
         wrongImage: "<img src='assets/images/nopeHair.jpg'>"
     },
     {
         question:  "Who is Mermaid Man's sidekick?",
         choices:   ["The Quickster", "Captain Magma", "Barnacle Boy", "The Elastic Waistband"],
         correctAnswer: "Barnacle Boy",
-        image: "<img src='assets/images/Mermaid_Man_and_Barnacle_Boy.jpg'>" ,
+        rightImage: "<img src='assets/images/Mermaid_Man_and_Barnacle_Boy.jpg'>" ,
         wrongImage: "<img src='assets/images/nopeYelling.jpg'>"
     },
     {
         question:   "Who is always trying to steal the Krabby Patty formula?",
         choices:    ["Plankton", "ManRay", "The Flying Dutchman", "Old Man Jenkins"],
         correctAnswer: "Plankton",
-        image: "<img src='assets/images/plankton.jpg'>",
+        rightImage: "<img src='assets/images/plankton.jpg'>",
         wrongImage: "<img src='assets/images/realDinerSbSp.png'>"
     },
     {
         question:   "Who is Spongebob's driving instructor?",
         choices:    ["Sandy Cheeks", "Perch Perkins", "Karen", "Mrs. Puff"],
         correctAnswer:  "Mrs. Puff",
-        image:  "<img src='assets/images/mrsPuff.jpg'>",
+        rightImage:  "<img src='assets/images/mrsPuff.jpg'>",
         wrongImage: "<img src='assets/images/sadCooking.jpg'>"
     },
     {
         question:   "Who always yells, 'My leg?'" ,
         choices:     ["Patrick Star", "Bubble Bass", "Fred Rechid", "Squilliam Fancyson"],
         correctAnswer:  "Fred Rechid",
-        image:  "<img src='assets/images/Fred.jpg'>",
+        rightImage:  "<img src='assets/images/Fred.jpg'>",
         wrongImage: "<img src='assets/images/thinking.jpg'>"
     },
     {
         question:   "Squidward is a ...?",
         choices:     ["Cuttlefish", "Squid", "Octopus", "Snail"],
         correctAnswer:  "Octopus",
-        image:  "<img src='assets/images/squidward.jpg'>",
+        rightImage:  "<img src='assets/images/squidward.jpg'>",
         wrongImage: "<img src='assets/images/wellingUp.jpg'>"
     },
     {
         question:   "Who is Pearl's favorite band?",
         choices:    ["The Sonars", "The Bird Brains", "Ned and the Needlefish", "Boys Who Cry"],
         correctAnswer:  "Boys Who Cry",
-        image:  "<img src='assets/images/pearl.jpg'>",
+        rightImage:  "<img src='assets/images/pearl.jpg'>",
         wrongImage: "<img src='assets/images/wrong-answer-sb&patrick.jpg'>"
     },
     {
         question:   "What is the most commonly used name for Spongebob's pet?",
         choices:    ["Gare-Bear", "Garold Wilson Jr.", "Gary", "Miss Tuffsy"],
         correctAnswer:  "Gary",
-        image:  "<img src='assets/images/gary.png'>",
+        rightImage:  "<img src='assets/images/gary.png'>",
         wrongImage: "<img src='assets/images/underwear.jpg'>"
     }
 ];   
@@ -112,7 +112,7 @@ function userWrong() {
     correctAnswer + 
     "</span></p>" +
     questions[questionCounter].image);
-    setTimeout(nextQuestion, 3000);
+    setTimeout(nextQuestion, 2000);
     questionCounter++;
 }
 
