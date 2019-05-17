@@ -22,6 +22,31 @@ p {
 }
 
 label {
-    font-size: 28px;
+    font-size: 32px;
 }
+
+#play {
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+    font-family: 'Slackey', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#done {
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+    font-family: 'Slackey', cursive;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#finish {
+    text-align: center;
+}
+
+
+
 
