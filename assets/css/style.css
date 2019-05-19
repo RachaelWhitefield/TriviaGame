@@ -32,6 +32,7 @@ label {
     font-family: 'Slackey', cursive;
     font-size: 40px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #done {
@@ -58,4 +59,9 @@ label {
     font-family: 'Slackey', cursive;
     font-size: 40px;
     margin-bottom: 20px;
+}
+
+#question {
+    font-size: 60px;
+    margin-bottom: 10px;
 }

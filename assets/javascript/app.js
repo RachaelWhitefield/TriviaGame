@@ -1,8 +1,9 @@
 $(document).ready(function () {
     var totalQuiz = 10;
     var correctAnswer = 0;
-    var masterTimer = 120;
+    var masterTimer = 90;
     var timeLeft = masterTimer;
+    var audio = new Audio("assets/audio/SpongebobSquarepants.mp3");
 
     $("#timer").hide();
     $("#gameArea").hide();
@@ -13,6 +14,7 @@ $(document).ready(function () {
 //  Click start button and game timer starts
     document.getElementById("play").addEventListener("click", function() {
         $("#play").on("click", function(){
+            audio.play();
             $("#gameArea").show();
             $("#countdown").show();
             $("#play").hide();
@@ -27,6 +29,9 @@ $(document).ready(function () {
             document.getElementById("countdown").innerHTML = "Time's Up!";
         }
         $("#done").click(function() {
+            audio.pause();
+            $("#countdown").hide();
+            $("#timer").hide();
             clearInterval(downloadTimer);
             calculateResults();
             $("#results").show();
