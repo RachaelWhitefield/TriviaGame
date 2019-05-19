@@ -32,6 +32,9 @@ $(document).ready(function () {
     $("#play").click(function() {
         $("#results").hide();
     });
+    $("#done").click(function() {
+        $("#results").show();
+    });
     $("#restart").click(function(){
       document.location.reload(true);
   });
