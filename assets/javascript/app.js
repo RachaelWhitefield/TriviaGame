@@ -3,9 +3,22 @@ $(document).ready(function () {
     var correctAnswer = 0;
     var masterTimer = 120;
     var timeLeft = masterTimer;
+
+    $("#timer").hide();
+    $("#gameArea").hide();
+    $("#done").hide();
+    $("#countdown").hide();
+    $("#results").hide();
     
 //  Click start button and game timer starts
     document.getElementById("play").addEventListener("click", function() {
+        $("#play").on("click", function(){
+            $("#gameArea").show();
+            $("#countdown").show();
+            $("#play").hide();
+            $("#timer").show();
+            $("#done").show();
+        })
     var downloadTimer = setInterval(function() {
         document.getElementById("countdown").innerHTML = timeLeft;
         timeLeft -= 1;
