@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var totalQuiz = 10;
     var correctAnswer = 0;
-    var masterTimer = 90;
+    var masterTimer = 10;
     var timeLeft = masterTimer;
     var audio = new Audio("assets/audio/SpongebobSquarepants.mp3");
 
@@ -26,6 +26,8 @@ $(document).ready(function () {
         timeLeft -= 1;
         if(timeLeft <= 0) {
             clearInterval(timeLeft);
+            // outOfTime();
+            console.log(timeLeft);
             document.getElementById("countdown").innerHTML = "Time's Up!";
         }
         $("#done").click(function() {
@@ -57,8 +59,20 @@ $(document).ready(function () {
     });
     $("#restart").click(function(){
       document.location.reload(true);
+
   });
 
-})
+ 
+
+});
+
+// function outOfTime() {
+//     $("#results").show();
+//     $("#gameArea").hide();
+//     $("#results").append("<h2>Oops!  Out of time!</h2>");
+
+// };
+
+
 
 
