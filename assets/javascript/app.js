@@ -1,7 +1,7 @@
 $(document).ready(function () {
     var totalQuiz = 10;
     var correctAnswer = 0;
-    var masterTimer = 10;
+    var masterTimer = 120;
     var timeLeft = masterTimer;
     var audio = new Audio("assets/audio/SpongebobSquarepants.mp3");
 
