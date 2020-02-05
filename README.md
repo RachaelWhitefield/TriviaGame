@@ -5,8 +5,12 @@ Make sure to have your volume on to hear the Spongebob Squarepants theme song du
 
 [Click Here To Play!](https://rachaelwhitefield.github.io/TriviaGame/)
 
-### Technoligies Used
+## See It In Action
+#### Start Screen
+![Start](assets/media/start.gif)
 
+[Check out a full video of the game here](https://drive.google.com/open?id=11wUQ06ITemVYR3JZWYw-NDpVZUwipyUK)
+### Technoligies Used
 * HTML
 * CSS
 * JavaScript
